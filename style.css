@@ -1,0 +1,1269 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #E3DAC6;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    overflow-x: hidden;
+    background-color: #07252D;
+}
+
+#nav {
+    width: 27%;
+    height: 20%;
+    /* background-color: green; */
+    position: fixed;
+    z-index: 99;
+    top: 7%;
+    display: flex;
+    right: 0%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  #navbar {
+    width: 35%;
+    height: 20%;
+    /* background-color: #11464C; */
+    z-index: 999;
+    top: 7%;
+    position: absolute;
+    display: flex;
+    left: 30%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  
+  
+  #part2 img {
+    height: 70%;
+    object-fit: cover;
+    position: absolute;
+    left: 33%;
+  }
+  
+  #part2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 45%;
+    height: 100%;
+    /* background-color: paleturquoise; */
+  }
+  
+  #page1 {
+    overflow: hidden;
+    width: 100vw;
+  
+    height: 100vh;
+    /* margin-top: -5%; */
+    position: relative;
+    padding: 0.1px 0.1px;
+    background-color: black;
+  }
+  
+  #page2 {
+    overflow: hidden;
+    width: 100vw;
+    height: 120vh;
+  
+    /* margin-top: -5%; */
+    position: relative;
+    padding: 0.1px 0.1px;
+    background-color: #07252D;
+  }
+  
+  #nav img {
+    height: 100%;
+    object-fit: cover;
+    margin-top: 36%;
+    margin-left: 65%;
+    z-index: 0;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    transition: all ease 0.5s;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+  #nav img:hover{
+    scale:1.1;
+  }
+  
+  #page1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+    object-position: center;
+  }
+  
+  #navv {
+    width: 20%;
+    position: absolute;
+    height: 20%;
+    top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 9999;
+    /* background-color: #11464C; */
+  }
+  
+  #page1 h1 {
+    position: absolute;
+    top: 35%;
+    z-index: 999;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    /* color: white; */
+    font-size: 63px;
+    font-weight: 100;
+  
+  }
+  
+  #page1 h2 {
+    position: absolute;
+    top: 46%;
+    z-index: 999;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    /* color: white; */
+    font-size: 43px;
+    font-weight: 100;
+  
+  }
+  
+  #page1 h3 {
+    position: absolute;
+    top: 60%;
+    z-index: 999;
+    left: 50%;
+    text-transform: uppercase;
+    font-weight: 100;
+    transform: translate(-50%, 0%);
+    /* color: white; */
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 1px;
+  
+  }
+  
+  #page3 h3 i {
+    /* color: white; */
+    transform: rotate(180deg);
+    font-size: 25px;
+  
+  }
+  
+  #page1 #img1 {
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 73%;
+    width: 70px;
+    height: 80px;
+    position: absolute;
+  }
+  
+  #full-scr {
+    cursor: pointer;
+    width: 100%;
+    height: 110vh;
+  
+    opacity: 1;
+    z-index: 99999;
+    padding: 0.1px 0.1px;
+    top: 0%;
+    left: -100%;
+    transition: all ease 0.7s;
+    background-color: #E3DAC6;
+    position: absolute;
+    /* right: -100%; */
+  }
+  
+  #full-scr #box{
+    height: 70%;
+    width: 50%;
+    /* background-color: yellow; */
+    margin-top: 10%;
+    position:absolute;
+    margin-left: 5%;
+    display: inline;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #full-scr #box h4 {
+    font-size: 50px;
+    /* color: rgba(51, 51, 51, 0.753); */
+    mix-blend-mode: difference;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-weight: 100;
+    text-transform: uppercase;
+    
+  }
+  
+  #full-scr #top img{
+    position: absolute;
+    top: 1%;
+    scale: 0.8;
+  }
+
+  #full-scr #box sup{
+    font-size: 20px;
+  }
+  #full-scr .cursorout{
+    height: 50%;
+    width: 20%;
+      /* mix-blend-mode: difference; */
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-50%,-50%);
+    
+      z-index: 0;
+      pointer-events: none;
+    background-size: cover;
+    background-position: center;
+    
+    background-image: url(https://uploads-ssl.webflow.com/62ce840f96e2b37e8364f89e/63ac1aa9916d9b7ffa1e7323_291122%20Quay%20House%201_DSC03271_00011.jpg);
+    /* mix-blend-mode: difference; */
+    
+    border: 1px solid white;
+  }
+   
+
+
+  #page3 {
+    height: 100vh;
+    padding: 0.1px 0.1px;
+    width: 100vw;
+    position: relative;
+    background-color: #07252D;
+  }
+  
+  #page2 #img3 {
+    height: 33%;
+    object-fit: cover;
+    position: absolute;
+    top: -8%;
+    left: 5%;
+  
+    transform: rotate(30deg);
+    z-index: 999;
+  
+  }
+  
+  #page2 h1 {
+    /* color: white; */
+    font-size: 110px;
+    font-weight: 100;
+    position: absolute;
+    z-index: 99;
+    left: 5%;
+    letter-spacing: 5px;
+    top: 15%;
+  
+  }
+  
+  #page2 p {
+    /* color: white; */
+    font-size: 45px;
+    width: 55%;
+    font-weight: 500;
+    position: absolute;
+    z-index: 99;
+    left: 5%;
+  
+    top: 35%;
+  
+  }
+  
+  #page2 h1 sup {
+    font-size: 30px;
+    /* color: white; */
+  }
+  
+  #page2 #img2 {
+    height: 95%;
+    object-fit: cover;
+    position: absolute;
+    top: -45%;
+    z-index: 1;
+    left: 49%;
+    object-position: center;
+  
+  }
+  
+  #page2 #img4 {
+    height: 27%;
+    left: 10%;
+    position: absolute;
+    object-fit: cover;
+    bottom: 3%;
+  }
+  
+  #page2 #img5 {
+    height: 27%;
+    right: 3%;
+    transform: rotate(45deg);
+    position: absolute;
+    object-fit: cover;
+    z-index: 999;
+    bottom: 23%;
+  }
+  
+  #page3 h1 {
+    font-size: 45px;
+    /* color: white; */
+    margin-top: 0%;
+    margin-left: 15%;
+    font-weight: 100;
+  }
+  
+  #page3 #centerimg {
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 5%;
+    margin-left: 1%;
+  
+  }
+  
+  #page3 #leftimg {
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 5%;
+    margin-left: 0%;
+  
+  }
+  
+  #page3 p {
+    /* color: white; */
+    font-size: 20px;
+    margin-top: -29%;
+    margin-left: 70%;
+    width: 25%;
+  }
+  
+  #page4 {
+    height: 110vh;
+    width: 100vw;
+    background-color: #07252D;
+    position: relative;
+  
+    padding: 0.1px 0.1px;
+  }
+  
+  #page4 h1 {
+    font-size: 120px;
+    width: 100%;
+    color: #11464C;
+    letter-spacing: 4px;
+    margin-left: 20%;
+    margin-top: 3%;
+    font-weight: 100;
+  
+  }
+  
+  #page4 h2 {
+    font-size: 120px;
+    width: 100%;
+    letter-spacing: 2px;
+    left: -22%;
+    color: #11464C;
+    font-weight: 100;
+    position: absolute;
+    top: 25%;
+    z-index: 999;
+  
+  }
+  
+  #page4 #bigimg {
+    height: 60%;
+    position: absolute;
+    top: 3%;
+    left: 7%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  #page4 #sideimg {
+    height: 70%;
+    position: absolute;
+    top: 10%;
+    z-index: 999;
+    right: 12%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  #page4 #bottomimg {
+    height: 24%;
+    margin-left: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 24%;
+  }
+  
+  #page4 p {
+    font-size: 22px;
+    /* color: white; */
+    text-align: left;
+    margin-left: 7%;
+    width: 20%;
+    margin-top: -15%;
+  }
+  
+  #page4 h4 {
+    font-size: 22px;
+    /* color: white; */
+    text-align: left;
+    margin-left: 64%;
+    width: 20%;
+    font-weight: 100;
+    margin-top: 4%;
+  }
+  
+  #navv {
+    width: 20%;
+    height: 10%;
+    /* background-color: blue; */
+    position: absolute;
+    z-index: 99;
+    top: 10%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  #navv h3 i {
+  /* color: white; */
+    /* mix-blend-mode:difference; */
+    font-size: 50px;
+    transition: all ease 0.8s;
+    font-weight: 100;
+    padding: 20px 30px;
+  }
+  
+  #top {
+    height: 20%;
+    width: 30%;
+    right: 35%;
+    /* transform: translate(-50%,0%); */
+    position: absolute;
+    top: 8%;
+    z-index: 9999;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  #top img {
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  #sidebar {
+    height: 60%;
+    top: 34%;
+    z-index: 9999;
+    right: 8%;
+  
+    position: absolute;
+    width: 5%;
+    /* background-color: aliceblue; */
+  }
+  
+  #sidebar h3 {
+    cursor: pointer;
+    font-size: 23px;
+    /* color: white; */
+    font-weight: 100;
+    margin-top: 90%;
+    transform: rotate(90deg);
+    text-transform: uppercase;
+  }
+  
+  #sidebar h4 {
+    cursor: pointer;
+    font-size: 23px;
+    /* color: white; */
+    font-weight: 100;
+  
+    margin-top: 190%;
+    transform: rotate(90deg);
+    text-transform: uppercase;
+  }
+  #page3 a{
+    font-size: 25px;
+    /* color: white; */
+    text-decoration: none;
+    text-transform: capitalize;
+    position: absolute;
+    right: 20%;
+    transition: all ease 0.5s;
+  top: 70%;
+  
+  }
+  
+  #page3 a::after{
+    content: "";
+    height: 1.5px;
+    width: 40%;
+    background-color: white;
+    position: absolute;
+    bottom: -9px;
+    left: 2px;
+    transition: all ease 1s;
+  }
+
+
+  #page3 a:hover::after{
+    width: 100%;
+  }
+  
+
+ 
+#page6{
+    min-height: 100vh;
+    width: 100vw;
+    background-color:#07252D;
+    position: relative;
+}
+
+#page6 h1{
+    font-size: 110px;
+    color:#E3DAC6;
+    padding: 20px 10%;
+    position: relative;
+}
+
+#page6 h1::after{
+    content: "02";
+    position: absolute;
+    font-size: 25px;
+    left: 8%;
+}
+
+#container{
+    display: flex;
+    min-height: 0vh;
+    gap: 20px;
+    justify-content: center;
+}
+
+#box1{
+    height: 85vh;
+    width: 30%;
+    background-image: url(https://uploads-ssl.webflow.com/62ce840f96e2b37e8364f89e/63ac1761ce1c7dc9b8ed928d_291122%20Quay%20House%201_291122%20Quay%20House%20101460_00039-p-500.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(50%);
+    position: relative;
+    transition: all ease 1s;
+}
+
+#box1:hover{
+    filter: brightness(100%);
+}
+
+#box1:hover #circle  img{
+    scale: 1;
+}
+
+#box1 #circle{
+    position: absolute;
+    height: 5%;
+    width: 20%;
+    top: 28%;
+    left: 18%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+
+#circle img{
+    scale: 0.7;
+    filter: brightness(3);
+    animation: rotation 9s infinite linear;
+    transition: all ease 1s;
+}
+
+@keyframes rotation {
+     0%{
+        transform:  rotate(0deg);
+     }
+     100%{
+        transform: rotate(360deg);
+     }
+}
+
+#box1 img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter: brightness(3);
+}
+
+#box2{
+    position: relative;
+    height:85vh;
+    width: 30%;
+    background-position: center;
+    filter: brightness(50%);
+    background-size: cover;
+    background-image: url(https://uploads-ssl.webflow.com/62ce840f96e2b37e8364f89e/63ac1aa9916d9b7ffa1e7323_291122%20Quay%20House%201_DSC03271_00011.jpg);
+}
+
+
+#box2:hover{
+    filter: brightness(100%);
+}
+
+#box2:hover #circle2 img{
+    scale: 1;
+}
+
+#box2 #circle2{
+    position: absolute;
+    height: 5%;
+    width: 20%;
+    top: 28%;
+    left: 18%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+
+#circle2 img{
+    scale: 0.7;
+    filter: brightness(3);
+    animation: rotation2 9s infinite linear;
+    transition: all ease 1s;
+}
+
+@keyframes rotation2 {
+     0%{
+        transform:  rotate(0deg);
+     }
+     100%{
+        transform: rotate(360deg);
+     }
+}
+
+#box2 img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter: brightness(3);
+}
+
+#box3{
+    position: relative;
+    height: 85vh;
+    filter: brightness(50%);
+    width: 30%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://uploads-ssl.webflow.com/62ce840f96e2b37e8364f89e/64e1df283df2a4e609afb889_WhatsApp%20Image%202023-08-17%20at%2010.50.41%20AM-p-500.jpeg);
+}
+
+#box3:hover{
+    filter: brightness(100%);
+}
+
+#box3:hover #circle3  img{
+    scale: 1;
+}
+
+#box3 #circle3{
+    position: absolute;
+    height: 5%;
+    width: 20%;
+    top: 28%;
+    left: 18%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+}
+
+#circle3 img{
+    scale: 0.7;
+    filter: brightness(3);
+    animation: rotation3 9s infinite linear;
+    transition: all ease 1s;
+}
+
+@keyframes rotation3 {
+     0%{
+        transform:  rotate(0deg);
+     }
+     100%{
+        transform: rotate(360deg);
+     }
+}
+
+#box3 img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter: brightness(3);
+}
+
+#page7{
+    min-height: 140vh;
+    width: 100vw;
+    background-color:#07252D;
+    position: relative;
+}
+
+#img-box{
+    height: 85vh;
+    width: 28%;
+    position: absolute;
+    top: 48%;
+    left: 15%;
+    background-image: url(https://uploads-ssl.webflow.com/62ce840f96e2b37e8364f89e/63ac189eb595447b5a850b23_291122%20Quay%20House%201_291122%20Quay%20House%20101353_00034-p-500.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#page7 h1{
+    color:#E3DAC6;
+    font-size: 110px;
+    position: absolute;
+    z-index: 9;
+    top: 40%;
+    left: 10%;
+    font-weight: 300;
+}
+
+#page7 h1::after{
+    content: "03";
+    position: absolute;
+    font-size: 25px;
+    left: -4%;
+}
+
+#leaf{
+    position: absolute;
+    height: 15%;
+    top: 20%;
+    left: 55%;
+}
+
+#leaf2{
+    position: absolute;
+    height: 23%;
+    top: 78%;
+    left: 36%;
+    transform: rotate(60deg);
+}
+
+#leaf3{
+    position: absolute;
+    height: 20%;
+    top: 70%;
+    right: 10%;
+    transform: rotate(60deg);
+}
+
+#leaf4{
+    position: absolute;
+    height: 10%;
+    top: 80%;
+    left: 8%;
+    transform: rotate(40deg);
+ 
+}
+
+
+#page7 #btn{
+    position: absolute;
+    color: white;
+    bottom: 27%;
+    font-size: 25px;
+    right: 32%;
+    cursor: pointer;
+}
+
+#btn::after{
+    content:"";
+    width: 30%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -8px;
+    left: 1px;
+    transition: all ease 1s;
+}
+ 
+
+#btn:hover::after{
+    width: 100%;
+}
+
+#page8{
+    height: 100vh;
+    width: 100%;
+    background-color: #07252D;
+    position: relative;
+}
+
+#page8 h1{
+    position: absolute;
+    color:#E3DAC6;
+    font-size: 110px;
+    font-weight: 400;
+    top: 15%;
+    left: 10%;
+}
+
+#page8 h1::after{
+    content: "04";
+    position: absolute;
+    font-size: 25px;
+    left: -20px;
+}
+
+#div{
+    display: flex;
+    color: #E3DAC6;
+    position: absolute;
+    top: 45%;
+    width: 100%;
+}
+
+#div1{
+    position: relative;
+    height: 30vh;
+    width: 46%;
+    /* background-color: red; */
+}
+
+#div1 h5{
+    position: absolute;
+    font-size: 15px;
+    transform: rotate(270deg);
+    top: 19%;
+    left: 12%;
+    color: #e3d2ad;
+}
+
+#div1 h2{
+    position:absolute ;
+    left: 20%;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+#div1 h3{
+    position: absolute;
+    left: 20%;
+    top: 19%;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+
+
+#div2{
+    position: relative;
+    height: 30vh;
+    width: 46%;
+    /* background-color: red; */
+}
+
+#div2 h5{
+    position: absolute;
+    font-size: 16px;
+    transform: rotate(270deg);
+    top: 24%;
+    left: 13%;
+    color: #e3d2ad;
+}
+
+#div2 h2{
+    position:absolute ;
+    left: 20%;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+#div2 h3{
+    position: absolute;
+    left: 20%;
+    top: 19%;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+#page8 svg{
+    scale: 0.1;
+    position: absolute;
+    transform: rotate(270deg);
+    bottom: -115%;
+    left: 30%;
+}
+
+#page8 h6{
+    position: absolute;
+    color:#E3DAC6;
+    font-size: 130px;
+    font-weight: 400;
+    top: 75%;
+    left: 10%;
+}
+
+#page8 h6::after{
+    content: "05";
+    position: absolute;
+    font-size: 25px;
+    left: -20px;
+}
+
+#page9{
+    min-height: 200vh;
+    width: 100%;
+    background-color:#07252D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+#row1{
+    height: 180vh;
+    width: 25%;
+ 
+    position: relative;
+}
+
+#row2{
+    height: 190vh;
+    width: 25%;
+ 
+    position: relative;
+}
+
+#row3{
+    height: 180vh;
+    width: 25%;
+ 
+    position: relative;
+}
+
+#row1-b1{
+    height: 30%;
+    width: 100%;
+ 
+    background-image: url(https://uploads-ssl.webflow.com/62ce840f96e2b37e8364f89e/6437d483a0a3c3c74196c201_Web%201920%20%E2%80%93%2047-p-500.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#row1-b2{
+    height: 30%;
+    width: 100%;
+ 
+    position: absolute;
+    bottom: 35%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://uploads-ssl.webflow.com/62ce840f96e2b37e8364f89e/6437d5190bea4f68322e9b4b_Web%201920%20%E2%80%93%2050-p-500.png);
+}
+
+
+#row1-b3{
+    height: 30%;
+    width: 100%;
+ 
+    position: absolute;
+    bottom: 0px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://uploads-ssl.webflow.com/62ce840f96e2b37e8364f89e/6437d6020bea4f85ba2ebaf0_Web%201920%20%E2%80%93%2053-p-500.png);
+}
+
+
+#row2-b1{
+    height: 30%;
+    width: 100%;
+  
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://uploads-ssl.webflow.com/62ce840f96e2b37e8364f89e/6437d68bfd4b2610b9caaea3_Web%201920%20%E2%80%93%2056-p-500.png);
+}
+
+#row2-b2{
+    height: 30%;
+    width: 100%;
+ 
+    position: absolute;
+    bottom: 35%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://uploads-ssl.webflow.com/62ce840f96e2b37e8364f89e/6437d6aeac291d26bfda96c2_Web%201920%20%E2%80%93%2057-p-500.png);
+}
+
+
+#row2-b3{
+    height: 30%;
+    width: 100%;
+ 
+    position: absolute;
+    bottom: 0px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://uploads-ssl.webflow.com/62ce840f96e2b37e8364f89e/6437d6253c70c9888eb5ce1e_Web%201920%20%E2%80%93%2054-p-500.png);
+}
+
+
+
+#row3-b1{
+    height: 30%;
+    width: 100%;
+ 
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://uploads-ssl.webflow.com/62ce840f96e2b37e8364f89e/6437d49d45ccd0142bc9b4a9_Web%201920%20%E2%80%93%2048-p-500.png);
+}
+
+#row3-b2{
+    height: 30%;
+    width: 100%;
+ 
+    position: absolute;
+    bottom: 35%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://uploads-ssl.webflow.com/62ce840f96e2b37e8364f89e/6437d4f2cf38d25b98385281_Web%201920%20%E2%80%93%2049-p-500.png);
+}
+
+
+#row3-b3{
+    height: 30%;
+    width: 100%;
+ 
+    position: absolute;
+    bottom: 0px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://uploads-ssl.webflow.com/62ce840f96e2b37e8364f89e/6437d64cc0a2d7c3cb7df070_Web%201920%20%E2%80%93%2055-p-500.png);
+}
+
+#page10{
+    min-height: 150vh;
+    width: 100%;
+    background-color: #07252D;
+    position: relative;
+}
+
+#review{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10%;
+}
+
+#r1{
+    height: 50vh;
+    width: 25%;
+    background-color: #11464C;
+}
+
+#star{
+    position: absolute;
+    top: 3%;
+    left: 13%;
+}
+
+#user{
+    position: absolute;
+    top: 10%;
+    left: 13%;
+}
+
+#user img{
+     width: 50%;
+}
+
+#r1 h4{
+    position: absolute;
+    color:#e3d2ad ;
+    top: 12%;
+    left: 19%;
+}
+
+#r1 span{
+    color: #e5c580;
+}
+
+#r2{
+    height: 50vh;
+    width: 25%;
+    background-color: #11464C;
+}
+
+#star2{
+    position: absolute;
+    top: 3%;
+    left: 40%;
+}
+
+#r2 p{
+    color:#e3d2ad;
+    padding: 24% 10%;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#r2 h4{
+    margin: -13% 30%;
+    color:#e3d2ad ;
+}
+
+#r2 span{
+    color: #e5c580;
+}
+
+#user2{
+    margin: -10% 10%;
+}
+
+#user2 img{
+    width: 20%;
+}
+
+#r3{
+    height: 50vh;
+    width: 25%;
+    background-color: #11464C;
+}
+
+#star3{
+    position: absolute;
+    top: 3%;
+    left: 67%;
+}
+
+#r3 p{
+    color:#e3d2ad;
+    padding: 24% 10%;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#r3 h4{
+    margin: -13% 30%;
+    color:#e3d2ad ;
+}
+
+#r3 span{
+    color: #e5c580;
+}
+
+#user3{
+    margin: -10% 10%;
+}
+
+#user3 img{
+    width: 20%;
+}
+
+
+
+
+#footer{
+    position: absolute;
+    bottom: 0px;
+    background-color: #05323A;
+    height: 70vh;
+    width: 100%;
+}
+
+#left img{
+  width: 15%;
+  margin: 5% 7%;
+}
+
+input{
+  position: absolute;
+  top: 47%;
+  left: 7%;
+  width: 20%;
+  height: 9%;
+  background-color:#05323A;
+  border: none;
+  border-bottom: 1px solid #e3d2ad;
+  font-size: 15px;
+}
+
+#mail{
+  position: absolute;
+  scale:0.2;
+  top: 17%;
+  left: 15%;
+}
+
+#left p{
+  position: absolute;
+  top: 61%;
+  left: 7%;
+  font-size: 18px;
+  color: #e3d2ad;
+}
+
+#footer h1{
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+#footer h2{
+  position: absolute;
+  font-weight: 400;
+  right: 10%;
+  top: 10%;
+  line-height: 35px;
+}
+
+#foot{
+  display: flex;
+  position: absolute;
+  top: 75%;
+  left: 40%;
+  gap: 50px;
+   
+}
+
+#foot h3{
+  color: #e3d2ad;
+}
